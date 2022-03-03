@@ -1,6 +1,8 @@
 # todo-app
 
 > A simple Todo App
+> 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/65338982/156642329-ba8df2dc-de3d-449f-a467-33241fad63aa.gif)
 
 ## Build Setup
 
@@ -16,7 +18,5 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-![image](2022-03-03_20-45.png)
-![image](2022-03-03_20-46.png)
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
