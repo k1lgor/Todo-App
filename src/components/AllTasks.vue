@@ -7,24 +7,40 @@
             v-model="inputText"
             class="text-center"
         />
-        <button
-            v-for="(task, index) in this.$store.state.allTasks"
-            :key="index"
-            type="button"
-            @click="completeTask(index)"
-            class="list-group-item list-group-item-action"
-        >
-            {{ task.task }}
-        </button>
+        <draggable v-model="dragging">
+            <button
+                v-for="(task, index) in this.$store.state.allTasks"
+                :key="index"
+                type="button"
+                @click="completeTask(index)"
+                class="list-group-item list-group-item-action"
+            >
+                {{ task.task }}
+            </button>
+        </draggable>
     </div>
 </template>
 
 <script>
+import draggable from "vuedraggable";
 export default {
     data() {
         return {
             inputText: "",
         };
+    },
+    components: {
+        draggable,
+    },
+    computed: {
+        dragging: {
+            get() {
+                return this.$store.state.allTasks;
+            },
+            set(value) {
+                return this.$store.commit("rearrangeAllTasks", value);
+            },
+        },
     },
     methods: {
         addNewTask() {
@@ -32,7 +48,6 @@ export default {
             this.inputText = "";
         },
         completeTask(index) {
-            console.log(this.$store.state.allTasks[index]);
             this.$store.dispatch("completeTask", index);
         },
     },

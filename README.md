@@ -3,12 +3,12 @@
 http://beneficial-planes.surge.sh
 
 > A simple Todo App
-> 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/65338982/156642329-ba8df2dc-de3d-449f-a467-33241fad63aa.gif)
+>
+> ![ezgif com-gif-maker](https://user-images.githubusercontent.com/65338982/156642329-ba8df2dc-de3d-449f-a467-33241fad63aa.gif)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 npm install vue-router@3.0.1

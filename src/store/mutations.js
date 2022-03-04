@@ -3,7 +3,7 @@ export default {
     state.allTasks.push({
       id: state.allTasks.length + 1,
       task: value,
-      isDone: false,
+      isDone: false
     });
   },
   completeTask(state, value) {
@@ -16,4 +16,10 @@ export default {
     state.allTasks.push(state.completedTasks[value]);
     state.completedTasks.splice(value, 1);
   },
+  rearrangeAllTasks(state, value) {
+    state.allTasks = value;
+  },
+  rearrangeCompletedTasks(state, value) {
+    state.completedTasks = value;
+  }
 };
