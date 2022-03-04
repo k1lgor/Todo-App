@@ -3,8 +3,8 @@
 http://beneficial-planes.surge.sh
 
 > A simple Todo App
->
-> ![ezgif com-gif-maker](https://user-images.githubusercontent.com/65338982/156642329-ba8df2dc-de3d-449f-a467-33241fad63aa.gif)
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/65338982/156820635-13c38246-1966-4907-bd40-4919c4b81b1f.gif)
 
 ## Build Setup
 
