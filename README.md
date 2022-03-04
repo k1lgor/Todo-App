@@ -11,6 +11,7 @@
 npm install
 npm install vue-router@3.0.1
 npm install vuex@3.0.1
+npm install vuedraggable
 
 # serve with hot reload at localhost:8080
 npm run dev
